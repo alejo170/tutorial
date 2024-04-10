@@ -1,0 +1,112 @@
+.index {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 25px 50px;
+    gap: 50px;
+
+    & div {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    
+        & p {
+            padding: 50px 0;
+        }
+
+        & a {
+            background: var(--blue);
+            color: var(--white);
+            border-radius: 8px;
+            padding: 10px 20px;
+            border: 1px solid var(--graydark);
+            transition: .5s ease;
+            
+            &:hover {
+                background: var(--bluelight);
+                text-shadow:0 0 5px var(--white),
+                            0 0 10px var(--white),
+                            0 0 20px var(--white);
+                box-shadow: 0 0 5px var(--bluelight),
+                            0 0 20px var(--bluelight),
+                            0 0 50px var(--bluelight),
+                            0 0 100px var(--bluelight);
+                color: var(--black);                             
+            }
+        }
+    }
+}
+
+.tutorial {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 25px 50px;
+    
+   
+    & h1 {
+        padding: 50px 0;
+    }
+
+    & ul {
+        border: 1px solid var(--blue);
+        padding: 60px;
+
+        & li {
+            padding: 10px 0;
+        }
+    }
+}
+
+#instalar {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 50px 50px;
+    
+    & div {
+        display: flex;
+        align-items: center;
+        gap: 50px;
+        padding: 80px 0;
+    }
+}
+
+#configurar {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 50px 50px;
+    
+    & div {
+        display: flex;
+        align-items: center;
+        gap: 50px;
+        padding: 80px 0;
+
+        & img {
+            padding: 20px 0;
+        }
+    }
+}
+
+#crear {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 50px 50px;
+    
+    & div {
+        display: flex;
+        align-items: center;
+        gap: 50px;
+        padding: 80px 0;
+    }
+}
+
+@media (width < 1000px) {
+    .index {
+        display: flex;
+        flex-direction: column;
+    }
+}
