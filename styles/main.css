@@ -58,7 +58,7 @@
     }
 }
 
-#instalar {
+#instalar, #crear, #desplegar {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -72,7 +72,7 @@
     }
 }
 
-#configurar {
+#configurar, #conectar {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -90,23 +90,25 @@
     }
 }
 
-#crear {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 50px 50px;
-    
-    & div {
-        display: flex;
-        align-items: center;
-        gap: 50px;
-        padding: 80px 0;
-    }
-}
-
 @media (width < 1000px) {
     .index {
         display: flex;
         flex-direction: column;
+    }
+    .tutorial {
+        display: flex;
+        flex-direction: column;
+    }
+    #instalar, #crear, #desplegar {
+        & div {
+            display: flex;
+            flex-direction: column;
+        }
+    }
+    #configurar, #conectar {
+        & div {
+            display: flex;
+            flex-direction: column;
+        }
     }
 }

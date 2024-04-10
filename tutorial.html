@@ -8,7 +8,7 @@
     <link rel="shortcut icon" href="assets/favicon.ico" type="image/x-icon">
 </head>
 <body>
-    <header>
+    <header id="back-top">
         <figure>
             <img src="assets/logo.png" alt="logo de github" width="100">
         </figure>
@@ -35,7 +35,7 @@
             <div>
                 <img src="assets/tutorial1.png" alt="descargar git" width="600">    
                 <p>Primero, asegúrate de tener Git instalado en tu sistema. Puedes descargarlo e instalarlo desde <a href="https://git-scm.com/">git-scm.com.</a>Aquí debes seleccionar el que corresponda con la arquitectura de tu ordenador. <br><br>
-                    Una vez finalice la instalación haz clic en <strong>“Finish”</strong> para completar y cerrar el asistente. <br><br> Para comprobar que todo se ha instalado correctamente puedes ir al menú inicio y comprobar que la aplicación aparezca allí.</p>
+                    Una vez descargado, ejecuta el instalador. Se abrirá un asistente de instalación que te guiará a través del proceso. Durante la instalación, se te pedirá que configures algunas opciones, como la ruta de instalación y las opciones del sistema. Puedes aceptar las opciones predeterminadas o personalizarlas según tus preferencias.Una vez completada la instalación haz clic en <strong>“Finish”</strong> para completar y cerrar el asistente. <br><br> Para comprobar que todo se ha instalado correctamente puedes ir al menú inicio y comprobar que la aplicación aparezca allí.</p>
             </div>
         </section>
         <section id="configurar">
@@ -46,7 +46,9 @@
                     <img src="assets/tutorial3.png" alt="configurar contraseña git" width="600">
                     <img src="assets/tutorial4.png" alt="inicializar git" width="600">
                 </figure>
-                <p>Al tener tu proyecto creado en <em>VS Code</em>, posteriormente accedemos a la terminal y desde alli se configura el nombre de usuario y dirección de correo electrónico. <br><br> Tambien inicializamos git.
+                <p>Configurar Git correctamente es fundamental para un flujo de trabajo eficiente. A través de la configuración, puedes establecer tu identidad como usuario de Git y personalizar varios aspectos de su comportamiento. <br><br>
+                    La configuración global de Git se aplica a todos los repositorios en tu sistema. Puedes configurar tu nombre de usuario y dirección de correo electrónico con los siguientes comandos: <code>git config --global user.name "Tu Nombre"</code>
+                    y <code>git config --global user.email "tu@email.com"</code><br><br> Es importante utilizar la misma dirección de correo electrónico que la asociada con tu cuenta de GitHub para que tus contribuciones se asocien correctamente con tu perfil.
                 </p>
             </div>
         </section>
@@ -54,18 +56,37 @@
             <h2>Crear Repositorio en Github</h2>
             <div>
                 <img src="assets/tutorial5.png" alt="Crear Repositorio en Github" width="600">    
-                <p>Ingresamos a <a href="https://github.com/">Github</a> y alli creamos el repositorio donde se van a guardar los archivos de el proyecto que hemos creado. <br><br>
-                Colocamos un nombre, descripcion, seleccionamos como va a ser el repositorio, si es publico o privado y posteriormente pulsamos el boton: <q>Create repository</q></p>
+                <p>Primero, asegúrate de estar conectado a tu cuenta de GitHub. Si aún no tienes una cuenta, puedes registrarte de forma gratuita en <a href="https://github.com/">Github.</a> <br><br> Haz clic en tu avatar en la esquina superior derecha de la pantalla para abrir el menú desplegable y selecciona "Your repositories" (Tus repositorios) para ver una lista de todos tus repositorios existentes. Si es tu primera vez en GitHub, esta lista estará vacía. <br><br> Una vez en la página de "Your repositories", encontrarás un botón verde en la esquina superior derecha con la etiqueta "New". Haz clic en este botón para iniciar el proceso de creación de un nuevo repositorio. <br><br>
+                Se te dirigirá a una página donde deberás ingresar información sobre tu nuevo repositorio. Aquí es donde puedes especificar detalles como el nombre del repositorio, una descripción (opcional), si deseas que el repositorio sea público o privado, y otras opciones como la inicialización de un archivo README, la inclusión de un archivo .gitignore y la elección de una licencia. <br><br> Después de completar toda la información requerida, haz clic en el botón verde "Create repository" (Crear repositorio). Esto creará tu nuevo repositorio en GitHub y te dirigirá a la página principal del repositorio recién creado.
+                Colocamos un nombre, descripcion, seleccionamos como va a ser el repositorio, si es publico o privado y posteriormente pulsamos el boton: <q>Create repository</q>
+                </p>
             </div>
         </section>
         <section id="conectar">
             <h2>Conectar con Github</h2>
             <div>
-                <img src="assets/tutorial6.png" alt="Conectar con Github" width="600">    
-                <p></p>
+                <figure>
+                    <img src="assets/tutorial6.png" alt="añadir archivos" width="600">
+                    <img src="assets/tutorial7.png" alt="crear commit" width="600">
+                    <img src="assets/tutorial8.png" alt="crear rama main" width="600">
+                    <img src="assets/tutorial9.png" alt="conectar repositorio" width="600">
+                    <img src="assets/tutorial10.png" alt="subir cambios" width="600">
+                </figure>
+                <p>Una vez que hayas inicializado un repositorio Git en tu proyecto y estés listo para comenzar a trabajar con archivos, el siguiente paso es agregar los archivos que deseas incluir en el control de versiones. Puedes usar el comando git add para añadir archivos al área de preparación. <br><br> Después de agregar los archivos al área de preparación, puedes crear un commit con el comando git <br><br> Ahora puedes conectar tu repositorio local con un repositorio remoto en GitHub. <br><br> Sube tus cambios al repositorio remoto en GitHub. <br><br> Ahora tu código está disponible en GitHub para que tú y otros colaboradores puedan trabajar en él.
+                </p>
             </div>
         </section>
-        <section id="desplegar"></section>
+        <section id="desplegar">
+            <h2>Desplegar en Github</h2>
+            <div>
+                <img src="assets/tutorial11.png" alt="desplegar en Github" width="600">    
+                <p>Una vez que los archivos de tu sitio web estén en el repositorio, accede a la página principal del repositorio en GitHub. En la barra de navegación superior, haz clic en la pestaña "Settings" (Configuración). <br><br>
+                En la sección del ladoizquierdo ve a  "Pages" en la página de configuración del repositorio. Aquí es donde puedes activar GitHub Pages y seleccionar la fuente desde la cual se servirá tu sitio web. Para la mayoría de los casos, querrás seleccionar la rama "main". <br><br>
+                Después de seleccionar la fuente para GitHub Pages, haz clic en el botón "Save" (Guardar). Esto activará GitHub Pages para tu repositorio y generará una URL donde se alojará tu sitio web. <br><br>
+                Esta es la <a href="https://alejo170.github.io/tutorial/">URL</a> del sitio desplegado</p>
+            </div>
+            <a href="#back-top">Arriba</a>
+        </section>
     </main>
     <footer>
         <p>Pagina diseñada en HTML y CSS | 2024</p>
